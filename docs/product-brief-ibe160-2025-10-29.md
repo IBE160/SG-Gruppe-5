@@ -192,7 +192,7 @@ This project supports the strategic initiative of expanding into the EdTech and 
 
 ### A. Research Summary
 
-The user research report ("research-user-2025-10-29.md") provides a detailed analysis of the target user, their pain points, and the market opportunity.
+The user research report ("docs/fase-1-analyse/research-user-2025-10-29.md") provides a detailed analysis of the target user, their pain points, and the market opportunity.
 
 ### B. Stakeholder Input
 
@@ -201,7 +201,7 @@ This brief is based on the initial project proposal ("proposal.md") and subseque
 ### C. References
 
 -   proposal.md
--   docs/research-user-2025-10-29.md
+-   docs/fase-1-analyse/research-user-2025-10-29.md
 
 ---
 
