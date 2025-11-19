@@ -101,16 +101,27 @@ No fundamentally novel UX patterns were identified for the core interactions. Th
 
 ### 4.1 Chosen Design Approach
 
-**Chosen Design Direction:** "Clean & Focused Assistant"
 
-**Rationale:** This direction builds upon the minimalist and professional aesthetic established in the initial landing page design. It prioritizes clarity, efficiency, and a direct path to user goals, aligning perfectly with the desired emotional response of "efficient and productive."
+
+**Chosen Design Direction:** "The Focused Assistant" (Direction 1)
+
+
+
+**Rationale:** This direction prioritizes a clear, guided user experience, minimizing distractions and making the application process effortless and confidence-boosting. It aligns with the desired emotional response of "efficient and productive."
+
+
 
 **Key Characteristics:**
--   **Layout Approach:** Primarily centered content with ample white space. Key content areas (e.g., CV upload, job ad input, AI suggestions, generated cover letter) will be presented in distinct, card-like structures or clearly defined sections. This ensures focus on one task or piece of information at a time.
--   **Visual Hierarchy:** Strong, clear headlines and calls-to-action. AI-generated suggestions and feedback will be visually prominent and actionable, using concise language and intuitive iconography.
--   **Interaction Patterns:** Direct and intuitive. Emphasis on clear button actions, drag-and-drop for document uploads, and inline editing for generated text. The AI assistant's presence will be integrated seamlessly, providing contextual help and suggestions without overwhelming the user.
--   **Visual Weight:** Minimalist and balanced, with a focus on essential elements. Subtle borders, shadows, and transitions will be used to define elements without adding visual clutter.
--   **Content Approach:** Scannable and concise. Information will be presented in digestible chunks, making it easy for users to quickly grasp AI suggestions and review generated content.
+
+-   **Layout Approach:** Single-column, centered content with a stepper/wizard-like flow. Content areas are presented in clear, distinct sections, ensuring focus on one task or piece of information at a time.
+
+-   **Visual Hierarchy:** Spacious layout with strong, clear headlines for each step. AI-generated suggestions and feedback will be visually prominent and actionable.
+
+-   **Interaction Patterns:** Direct and intuitive, with dedicated buttons for "Next Step" to guide the user progressively through the process. Emphasis on clear button actions and form-based inputs.
+
+-   **Visual Weight:** Minimalist and balanced, with ample white space. Subtle borders and shadows define elements without adding visual clutter.
+
+-   **Content Approach:** Scannable and concise, presented in digestible chunks within each step of the guided flow.
 
 **Interactive Mockups:**
 
@@ -233,6 +244,29 @@ This strategy ensures that development can proceed efficiently with established 
 **5. Confirmation Patterns:**
 -   **Irreversible Actions (e.g., deleting an application):** A **modal dialog** requiring explicit confirmation from the user, clearly stating the impact of the action.
 -   **Leaving Unsaved Changes:** A browser-level or custom modal warning the user about unsaved changes before navigating away.
+
+**6. Modal Patterns:**
+-   **Dismiss Behavior:** Users can close modals by clicking a close (X) button, pressing the Escape key, or clicking the background overlay.
+-   **Focus Management:** Focus will be trapped within the modal to guide the user.
+-   **Stacking:** Avoid stacking modals to maintain a clean, simple interface.
+
+**7. Navigation Patterns:**
+-   **Active State:** The active navigation item will be indicated with a bold font and a subtle background color.
+-   **Back Button:** The browser's back button will function as expected, taking the user to their previous view.
+
+**8. Notification Patterns:**
+-   **Placement:** Notifications will appear in the top-right corner.
+-   **Duration:** Informational messages will auto-dismiss after 5 seconds; errors will require manual dismissal.
+
+**9. Search Patterns:**
+-   **Trigger:** A simple search bar in the header.
+-   **Results Display:** Instant results as the user types.
+-   **Filters:** Not applicable for the current design.
+-   **No Results:** Display a "No results found" message.
+
+**10. Date/Time Patterns:**
+-   **Format:** Use relative time for recent items (e.g., "2 hours ago") and absolute dates for older items (e.g., "Nov 19, 2025").
+-   **Timezone:** All times will be displayed in the user's local timezone.
 
 ---
 

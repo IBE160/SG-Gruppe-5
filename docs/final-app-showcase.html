@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Screens Showcase - AI CV & Job Application Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #136dec;
+            --background-light: #f6f7f8;
+            --text-dark: #101822;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+        .screen {
+            display: none;
+        }
+        .screen.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+
+    <div class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Key Screens Showcase</h1>
+            <div>
+                <select id="screen-switcher" class="p-2 border rounded">
+                    <option value="0">1. Dashboard</option>
+                    <option value="1">2. Upload Screen</option>
+                    <option value="2">3. Review Suggestions</option>
+                    <option value="3">4. Review Cover Letter</option>
+                    <option value="4">5. Success State</option>
+                    <option value="5">6. Settings</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-24">
+        <!-- Screen 1: Dashboard -->
+        <div id="screen-0" class="screen active">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <h2 class="text-3xl font-bold mb-4">Welcome, Emily!</h2>
+                    <p class="text-gray-600 mb-8">Ready to land your next job? Let's get started.</p>
+                    <button class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">Start New Application</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 2: Upload Screen -->
+        <div id="screen-1" class="screen">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-6">Step 1: Upload Your Documents</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your CV</label>
+                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-12 text-center">
+                                <p>Drag & drop your CV here</p>
+                                <p class="text-sm text-gray-500 my-2">or</p>
+                                <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded">Browse Files</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="job-description" class="block text-sm font-medium text-gray-700 mb-2">Job Description</label>
+                            <textarea id="job-description" rows="8" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Paste the job description here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">Next Step: Analyze</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 3: Review Suggestions -->
+        <div id="screen-2" class="screen">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-6">Step 2: Review CV Suggestions</h2>
+                    <div class="space-y-4">
+                        <div class="border rounded-lg p-4">
+                            <h3 class="font-semibold text-lg">Keyword Optimization</h3>
+                            <p class="text-gray-600">Add keywords like "SEO" and "content creation" from the job description.</p>
+                            <div class="mt-2 text-right">
+                                <button class="text-sm text-primary font-semibold">Accept</button>
+                                <button class="text-sm text-gray-500 ml-4">Dismiss</button>
+                            </div>
+                        </div>
+                        <div class="border rounded-lg p-4">
+                            <h3 class="font-semibold text-lg">Impact Metrics</h3>
+                            <p class="text-gray-600">Quantify your achievements. Instead of "Managed social media," try "Grew social media engagement by 15% over 3 months."</p>
+                             <div class="mt-2 text-right">
+                                <button class="text-sm text-primary font-semibold">Accept</button>
+                                <button class="text-sm text-gray-500 ml-4">Dismiss</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">Next Step: Generate Cover Letter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 4: Review Cover Letter -->
+        <div id="screen-3" class="screen">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-6">Step 3: Review Your Cover Letter</h2>
+                    <div class="border rounded-lg p-4 bg-gray-50">
+                        <textarea rows="12" class="w-full border-0 bg-transparent p-2 text-gray-800">Dear Hiring Manager,
+
+I am writing to express my interest in the Junior Marketing Associate position at [Company Name], which I found on [Platform]. With my experience in social media marketing and content creation, I am confident that I have the skills and passion to excel in this role.
+
+...</textarea>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">Finish & Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 5: Success State -->
+        <div id="screen-4" class="screen">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="w-24 h-24 rounded-full bg-green-500 text-white flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Application Ready!</h2>
+                    <p class="text-gray-600 mb-8">Your tailored CV and cover letter are ready for download.</p>
+                    <div class="flex justify-center space-x-4">
+                        <button class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">Download All</button>
+                        <button class="bg-gray-200 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg">Start New Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 6: Settings -->
+        <div id="screen-5" class="screen">
+            <div class="max-w-4xl mx-auto p-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold mb-6">Settings</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" value="Emily" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" value="emily@example.com" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
+                        </div>
+                        <div class="flex items-center">
+                            <input id="notifications" name="notifications" type="checkbox" checked class="h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary">
+                            <label for="notifications" class="ml-2 block text-sm text-gray-900">Enable email notifications</label>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const screenSwitcher = document.getElementById('screen-switcher');
+        const screens = document.querySelectorAll('.screen');
+
+        screenSwitcher.addEventListener('change', (event) => {
+            const selectedIndex = event.target.value;
+            screens.forEach((screen, index) => {
+                if (index == selectedIndex) {
+                    screen.classList.add('active');
+                } else {
+                    screen.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
